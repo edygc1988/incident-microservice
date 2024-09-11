@@ -1,0 +1,22 @@
+version: '3'
+services:
+  incidents-service:
+    build: .
+    ports:
+      - "3002:3002"
+    environment:
+      - DB_HOST=db
+      - DB_NAME=incidents_db
+      - DB_USER=your_db_user
+      - DB_PASS=your_db_pass
+      - JWT_SECRET=your_jwt_secret
+    depends_on:
+      - db
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: incidents_db
+      POSTGRES_USER: your_db_user
+      POSTGRES_PASSWORD: your_db_pass
+    ports:
+      - "5432:5432"
