@@ -9,4 +9,3 @@ class IncidentUseCase {
   }
   
   module.exports = IncidentUseCase;
-  

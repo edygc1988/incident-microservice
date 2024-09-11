@@ -11,4 +11,3 @@ class Incident {
   }
   
   module.exports = Incident;
-  

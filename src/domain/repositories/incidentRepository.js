@@ -9,4 +9,3 @@ class IncidentRepository {
   }
   
   module.exports = IncidentRepository;
-  

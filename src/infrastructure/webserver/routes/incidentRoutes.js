@@ -7,4 +7,3 @@ const router = express.Router();
 router.post('/incidents', authMiddleware, incidentController.crearIncidencia);
 
 module.exports = router;
-    
